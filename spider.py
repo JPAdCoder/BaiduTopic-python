@@ -5,10 +5,11 @@ import datetime
 from bs4 import BeautifulSoup
 
 db = pymysql.connect(
-    host='localhost',
+    host='cdb-217skhxi.cd.tencentcdb.com',
     user='root',
     password='96241158aB!0',
-    database='topic'
+    database='baidu_topic',
+    port=10022
 )
 
 cursor = db.cursor()
