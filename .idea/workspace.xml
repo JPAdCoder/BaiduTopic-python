@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47da2d5a-503b-4637-88f9-5b56624d9638" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/spider.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +91,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="Settings.Markdown" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -171,7 +171,7 @@
       <workItem from="1568797220065" duration="5487000" />
       <workItem from="1568807256670" duration="5000" />
       <workItem from="1568854236639" duration="803000" />
-      <workItem from="1568865269542" duration="2172000" />
+      <workItem from="1568865269542" duration="3015000" />
     </task>
     <servers />
   </component>
