@@ -1,4 +1,4 @@
-## BaiduTopic-python [GitLab](https://github.com/JPAdCoder/BaiduTopic-python) [GitHub](http://adcoder.club:10080/AdCoder/baidutopic-python)
+## BaiduTopic-python [GitLab](http://adcoder.club:10080/AdCoder/baidutopic-python) [GitHub](https://github.com/JPAdCoder/BaiduTopic-python)
 
 ## 1.说明  
 >* 使用python抓取百度搜索风云榜Top50的话题内容以及搜索数量，每十分钟抓取一次
