@@ -25,7 +25,6 @@ def query_by_topic_name(topic_name):
 def insert_topic(topic_name, count):
     sql = "insert into topic (topic_name, count) value ('%s', %d) " % (topic_name, count)
     cursor.execute(sql)
-    logger.info("插入话题: %s %d" % (topic_name, count))
     db.commit()
 
 
@@ -33,7 +32,6 @@ def update_topic(topic_name, count):
     sql = "update topic set count=%d, update_datetime='%s' where topic_name = '%s' " % \
           (count, datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"), topic_name)
     cursor.execute(sql)
-    logger.info("更新话题: %s %d" % (topic_name, count))
     db.commit()
 
 
@@ -44,6 +42,8 @@ while True:
     soup = BeautifulSoup(response.text, 'html.parser')
     keyword_list = []
     count_list = []
+    insert_count = 0
+    update_count = 0
     for item in soup.find_all(class_='keyword'):
         keyword_list.append(item.a.get_text())
 
@@ -54,7 +54,9 @@ while True:
     for item in zipped:
         if query_by_topic_name(item[0]) is not None:
             update_topic(item[0], item[1])
+            update_count += 1
         else:
             insert_topic(item[0], item[1])
-    logger.info("睡眠10分钟")
+            insert_count += 1
+    logger.info("新增话题：%d;更新话题：%d" % (insert_count, update_count))
     time.sleep(600)
